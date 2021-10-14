@@ -38,6 +38,6 @@ app.get('/api/rappers/:rapperName', (request, response) => {
     response.json(rappers[rapName])
 })
 
-app.listen(PORT, () =>{
+app.listen(precess.env.PORT || PORT, () =>{
     console.log(`The Server is running on ${PORT} you better catch it`)
 })
